@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# vim set ft=bash
+
+set -euo pipefail
+
+install() {
+    out=$(nix-build ./nix -A "$1")
+    PATH="$out/bin:$PATH"
+}
+
+install shellcheck
+
+shellcheck -s bash ./sorri -i SC2156 # SC2156 needs to be fixed manually
