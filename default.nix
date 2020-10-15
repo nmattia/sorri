@@ -12,7 +12,7 @@ pkgs.writeScriptBin "sorri" ''
     echo ".envrc already exists. Remove it first."
   else
     mkdir -p nix
-    cp ${./sorri} -o nix/sorri
+    cp ${./sorri} nix/sorri
     echo ". nix/sorri $(basename $PWD)" > .envrc
     direnv allow
   fi
