@@ -21,6 +21,22 @@ $ echo ". nix/sorri $(basename $PWD)" > .envrc
 
 You're all set!
 
+### The sorri helper
+
+The `sorri` helper bootstraps projects for you. Install it with:
+
+```
+nix-env -if https://github.com/nmattia/sorri/tarball/master
+```
+
+... and from then on use:
+
+```
+$ sorri init
+```
+
+inside your project.
+
 ## How It Works
 
 This is a simple, lightweight implementation of Tweag's
