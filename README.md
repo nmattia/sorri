@@ -40,7 +40,7 @@ inside your project.
 ## How It Works
 
 This is a simple, lightweight implementation of Tweag's
-[lorri](https://github.com/target/lorri)
+[lorri](https://github.com/nix-community/lorri)
 
 sorri reuses lorri's tricks for figuring out the files to track for changes,
 but uses direnv's own mechanism for actually tracking those files.
