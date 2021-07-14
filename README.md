@@ -10,7 +10,7 @@ Just Add Water direnv support for the nix-shell.
 Add `sorri` to your project:
 
 ```
-$ curl https://raw.githubusercontent.com/nmattia/sorri/master/sorri -o nix/sorri
+$ curl https://raw.githubusercontent.com/nmattia/sorri/master/sorri --create-dirs --output nix/sorri
 ```
 
 Update your `.envrc` to use `sorri`:
